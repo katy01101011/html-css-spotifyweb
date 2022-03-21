@@ -1,0 +1,65 @@
+/* COLORS
+
+Sidebar: black
+Main: #141922;
+Footer: #282828;
+Green: #ADFF2F;
+Light gray: #A3A3A3;
+Gray: 6E6E6E
+*/
+
+/* 
+ICONS
+
+SIDEBAR
+Spotify: <i class="fab fa-spotify"></i>
+Home: <i class="fas fa-home"></i>
+Library: svg - noun-library
+Home: svg - noun-home
+Search: svg - noun-search
+Plus: <i class="fas fa-plus"></i>
+Installa app: <i class="fal fa-arrow-circle-down"></i>
+Joh Doe: svg - noun-user
+
+MAIN
+Play: <i class="far fa-play-circle"></i>
+
+FOOTER
+Heart: <i class="fal fa-heart"></i>
+Folder: <i class="fal fa-folder"></i>
+Random: <i class="far fa-random"></i>
+Backward: <i class="far fa-step-backward"></i>
+Play: <i class="far fa-play-circle"></i>
+Forward: <i class="far fa-step-forward"></i>
+Next: <i class="far fa-redo-alt"></i>
+
+Menu: svg - noun-menu
+Monitor: <i class="fas fa-desktop"></i>
+Volume: <i class="fas fa-volume-up"></i>
+*/
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+
+html {
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+/* Clearfix */
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* TEST */
+body{
+    background-color: plum;
+}
