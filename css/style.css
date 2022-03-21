@@ -50,7 +50,11 @@ Volume: <i class="fas fa-volume-up"></i>
 
 html {
     font-family: 'Montserrat', Helvetica, sans-serif;
-    font-size: 100%;
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Clearfix */
@@ -59,6 +63,52 @@ html {
     display: table;
     clear: both;
 }
+
+/* UPGRADE */
+
+.upgrade {
+    width: calc(100% - 200px);
+    height: 70px;
+    line-height: 70px;
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+.upgrade_btn {
+    color: white;
+    float: right;
+    vertical-align: middle;
+    margin: 5px;
+}
+
+.upgrade_btn>a {
+    color: inherit;
+    text-transform: uppercase;
+    padding: 1em 3em;
+    border: 1px solid white;
+    border-radius: 3em;
+}
+
+
+
+/* .upgrade>div {
+    color: white;
+    display: flex;
+} */
+
+/* .upgrade a {
+    color: inherit;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1em 3em;
+    border: 1px solid white;
+    border-radius: 2.5em;
+    justify-content: end;
+} */
+
+
 
 /* TEST */
 
@@ -73,15 +123,6 @@ html {
     height: calc(100vh - 70px);
     background-color: black;
     float: left;
-}
-
-.upgrade {
-    width: calc(100% - 200px);
-    height: 70px;
-    background-color: rgba(0, 0, 0, .5);
-    position: fixed;
-    top: 0;
-    right: 0;
 }
 
 .center {
