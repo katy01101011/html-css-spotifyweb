@@ -67,10 +67,16 @@ ul {
 
 
 /* Clearfix */
-.clearfix {
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
+}
+
+/* MAIN */
+
+main {
+    overflow: hidden;
 }
 
 
@@ -80,6 +86,7 @@ ul {
     width: calc(100% - 200px);
     height: 70px;
     line-height: 70px;
+    margin-right: 5px;
     background-color: rgba(0, 0, 0, .5);
     top: 0;
     right: 0;
@@ -90,7 +97,6 @@ ul {
     color: white;
     float: right;
     vertical-align: middle;
-    margin: 5px;
 }
 
 .upgrade_btn>a {
@@ -110,6 +116,7 @@ ul {
     background-color: black;
     float: left;
     padding-top: 2rem;
+    overflow: hidden;
 }
 
 .nav_container {
@@ -118,15 +125,14 @@ ul {
     margin: 0 auto;
 }
 
-nav {
-    margin-top: 1.8rem;
-}
+/* SIDEBAR TOP */
 
 /* Logo Spotify - Sidebar  */
 
 #logo_spotify>svg {
     width: 100px;
     height: auto;
+    margin-bottom: 1.7rem;
 }
 
 /* Menu Home - Sidebar  */
@@ -164,7 +170,8 @@ h3 {
     line-height: 25px;
 }
 
-li>a {
+li>a,
+.install>a {
     color: #717171;
 }
 
@@ -176,7 +183,7 @@ li>a {
     font-size: 1.1rem;
 }
 
-nav>ul>li a:hover {
+nav>.nav_top>ul>li a:hover {
     color: white;
 }
 
@@ -197,11 +204,68 @@ nav>ul>li a:hover {
     background-color: #A3A3A3;
 }
 
+/* SIDEBAR - BOTTOM */
+
+/* Install - Sidebar */
+
+.install {
+    line-height: 15px;
+    padding: 1rem 0;
+    border-bottom: 1px solid #717171;
+}
+
+.install>svg {
+    width: 15px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.install>a:hover {
+    color: white;
+}
+
+/* Account - Sidebar */
+
+.account {
+    padding: 10px 0;
+}
+
+.profile_icon {
+    display: inline-block;
+    line-height: 20px;
+}
+
+#profile>img {
+    width: 20px;
+    height: 20px;
+    background-color: #808080;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 3px;
+}
+
+.account>a {
+    color: white;
+}
+
+
+
 
 
 
 
 /* TEST */
+
+.nav_top {
+    background-color: pink;
+}
+
+.nav_bottom {
+    background-color: lightgreen;
+}
 
 .main_container{
     width: 100%;
