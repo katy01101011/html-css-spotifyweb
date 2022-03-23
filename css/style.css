@@ -305,7 +305,6 @@ footer {
 }
 
 .track {
-    background-color: blue;
     height: 100%;
     display: flex;
 }
@@ -316,8 +315,7 @@ footer {
 }
 
 .track img {
-    width: 35px;
-    height: 35px;
+    width: 37px;
 }
 
 .track_name {
@@ -339,8 +337,12 @@ footer {
     color: #717171;
 }
 
+.track a:hover {
+    color: white;
+}
+
 .track_icons {
-    width: 51px;
+    width: 30px;
     padding-right: 9px;
     display: flex;
     flex-direction: column;
@@ -348,7 +350,7 @@ footer {
 }
 
 .track_icons>a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 
