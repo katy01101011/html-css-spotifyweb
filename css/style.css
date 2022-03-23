@@ -186,7 +186,7 @@ nav {
 
 .playlist_container {
     flex-grow: 1;
-    overflow-y: auto;
+    overflow: hidden;
 }
 
 h3 {
@@ -203,6 +203,10 @@ li>a,
 
 .playlist_container>h3 {
     line-height: 3.5rem;
+}
+
+.playlist_container>ul {
+    overflow-y: auto;
 }
 
 .playlist_container>a {
@@ -297,8 +301,55 @@ li>a,
 footer {
     display: flex;
     justify-content: space-between;
+    padding: 9px;
 }
 
+.track {
+    background-color: blue;
+    height: 100%;
+    display: flex;
+}
+
+.track_played {
+    display: flex;
+    align-items: center;
+}
+
+.track img {
+    width: 35px;
+    height: 35px;
+}
+
+.track_name {
+    width: 105px;
+    padding: 10px;
+    line-height: .9rem;
+}
+
+.track_name h4 {
+    color: white;
+    font-size: .9rem;
+}
+
+.track_name>a {
+    font-size: .8rem;
+}
+
+.track a {
+    color: #717171;
+}
+
+.track_icons {
+    width: 51px;
+    padding-right: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.track_icons>a {
+    font-size: 1.3rem;
+}
 
 
 
@@ -307,11 +358,7 @@ footer {
 
 /* TEST */
 
-.track {
-    background-color: blue;
-    width: 150px;
-    height: 100%;
-}
+
 
 .play {
     background-color: lightblue;
