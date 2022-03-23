@@ -167,6 +167,10 @@ nav {
     margin-bottom: 15px;
 }
 
+.menu .active {
+    border-left: 2px solid #ADFF2F;
+}
+
 .icon {
     width: 20px;
     line-height: 2.5rem;
@@ -300,7 +304,7 @@ footer {
 
 }
 
-/* Right */
+/* Track */
 
 .track {
     width: 170px;
@@ -366,41 +370,139 @@ footer {
 }
 
 
-/* Center */
+/* Play */
 
 .play {
     width: calc(100% - 340px);
     min-width: 170px;
     height: 100%;
-    background-color: coral;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .buttons {
+    color: white;
     width: 170px;
     height: 50%;
-    background-color: yellow;
+    padding-top: 9px;
+    line-height: 1.5rem;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons i:nth-child(3) {
+    font-size: 2.7rem;
+}
+
+.buttons i:nth-child(3):hover {
+    transform: scale(1.1);
 }
 
 .playbar {
+    color: white;
     min-width: 170px;
     width: 60%;
     height: 50%;
-    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Left */
+.playbar span:first-child {
+    margin-right: 2rem;
+}
+
+.playbar span:last-child {
+    margin-left: 2rem;
+}
+
+.playbar>div>i {
+    position: relative;
+    bottom: 7px;
+    left: 25%;
+    display: none;
+}
+
+.all:hover #play_circle {
+   display: inline-block;
+}
+
+
+/* Settings */
 
 .settings {
     width: 170px;
     min-width: 170px;
     height: 100%;
-    background: pink;
 }
 
+.settings_icons {
+    width: 40%;
+    height: 100%;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.settings_icons>a {
+    font-size: 1.2rem;
+}
+
+.settings_icons .btn {
+    margin: 0;
+    padding: 0;
+}
+
+/* Audio bar */
+
+.audio_bar {
+    width: 60%;
+    height: 100%;
+    padding: 9px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.all {
+    width: 100%;
+    height: 3px;
+    background-color: #5A5A5A;
+    border-radius: 2px;
+}
+
+.part {
+    width: 25%;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    opacity: .5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.all:hover .part {
+    background-color: #ADFF2F;
+    opacity: 1;
+}
+
+.all:hover .audio_circle {
+   display: inline-block;
+}
+
+.all .audio_circle {
+    font-size: 1.1rem;
+    color: white;
+    position: relative;
+    left: 16px;
+    bottom: 7px;
+    display: none;
+
+}
 
 
 
