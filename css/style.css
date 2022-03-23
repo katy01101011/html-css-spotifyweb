@@ -79,7 +79,7 @@ main {
     overflow: hidden;
 }
 
-.main_container{
+.main_content{
     width: 100%;
     height: calc(100vh - 70px);
 }
@@ -88,10 +88,10 @@ main {
 /* UPGRADE */
 
 .upgrade {
-    width: calc(100% - 200px);
+    width: calc(100% - 170px);
     height: 70px;
     line-height: 70px;
-    margin-right: 5px;
+    padding-right: 5px;
     background-color: rgba(0, 0, 0, .5);
     top: 0;
     right: 0;
@@ -112,11 +112,16 @@ main {
     border-radius: 3em;
 }
 
+.upgrade_btn:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 
 /* SIDEBAR */
 
 .sidebar {
-    width: 200px;
+    width: 170px;
     height: calc(100vh - 70px);
     background-color: black;
     float: left;
@@ -292,11 +297,116 @@ h3 {
 
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 9px;
+
 }
 
+/* Right */
+
 .track {
+    width: 170px;
+    min-width: 170px;
+    height: 100%;
+    background: rgb(27, 27, 27);
+}
+
+.track img {
+    width: 35px;
+    margin: 7px;
+    vertical-align: middle;
+}
+
+.played {
+    line-height: 70px;
+    width: 70%;
+    float: left;
+}
+
+.played>div {
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1rem;
+}
+
+.played h4 {
+    color: white;
+}
+
+.played .btn {
+    font-size: .9rem;
+    padding: 0;
+    line-height: 1rem;
+}
+
+.played .btn:hover {
+    text-decoration: underline;
+}
+
+/* Track Icons */
+
+.track>div {
+    width: 100%;
+    height: 100%;
+}
+
+.played_icons {
+    width: 30%;
+    height: 100%;
+    padding: 9px;
+    font-size: 1.3rem;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.played_icons>a {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+
+/* Center */
+
+.play {
+    width: calc(100% - 340px);
+    min-width: 170px;
+    height: 100%;
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons {
+    width: 170px;
+    height: 50%;
+    background-color: yellow;
+}
+
+.playbar {
+    min-width: 170px;
+    width: 60%;
+    height: 50%;
+    background-color: yellowgreen;
+}
+
+/* Left */
+
+.settings {
+    width: 170px;
+    min-width: 170px;
+    height: 100%;
+    background: pink;
+}
+
+
+
+
+
+
+
+/* .track {
     height: 100%;
     display: flex;
 }
@@ -325,6 +435,10 @@ footer {
     font-size: .8rem;
 }
 
+.track_name>a:hover {
+    text-decoration: underline;
+}
+
 .track a {
     color: #717171;
 }
@@ -334,16 +448,16 @@ footer {
 }
 
 .track_icons {
-    width: 30px;
+    width: 51px;
     padding-right: 9px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    background-color: pink;
 }
 
 .track_icons>a {
     font-size: 1.4rem;
-}
+} */
 
 
 
@@ -356,37 +470,37 @@ footer {
 
 
 
-.play {
+/* .play {
     background-color: lightblue;
     width: 40%;
     min-width: 100px;
     height: 100%;
-}
+} */
 
-.buttons {
+/* .buttons {
     background-color: yellow;
     width: 100px;
     height: 50%;
     margin: 0 auto;
-}
+} */
 
-.playbar {
+/* .playbar {
     background-color: orange;
     width: 90%;
     min-width: 100px;
     height: 50%;
     margin: 0 auto;
 
-}
+} */
 
-.settings {
+/* .settings {
     background-color: aqua;
     width: 150px;
     height: 100%;
-}
+} */
 
 .center {
-    width: calc(100% - 200px);
+    width: calc(100% - 170px);
     height: calc(100vh - 70px);
     float: left;
     background-color: #141922;
