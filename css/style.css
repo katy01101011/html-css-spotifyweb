@@ -291,54 +291,56 @@ li>a,
     color: white;
 }
 
-/* test */
 
-.nav_top {
+/* FOOTER */
 
-    background-color: aqua;
+footer {
+    display: flex;
+    justify-content: space-between;
 }
 
 
 
-.nav_bottom {
-    background-color: blueviolet;
-}
-
-#logo_spotify {
-    background-color: green;
-}
-
-.home {
-    background-color: blue;
-}
-
-.playlist_container {
-
-    background-color: red;
-
-
-}
-
-.playlist_container>h3 {
-    background-color: purple;
-}
-
-.playlist_container>a {
-    background-color: turquoise;
-}
-
-.scroll {
-    background-color: lightcoral;
-}
 
 
 
 
 /* TEST */
 
+.track {
+    background-color: blue;
+    width: 150px;
+    height: 100%;
+}
 
+.play {
+    background-color: lightblue;
+    width: 40%;
+    min-width: 100px;
+    height: 100%;
+}
 
+.buttons {
+    background-color: yellow;
+    width: 100px;
+    height: 50%;
+    margin: 0 auto;
+}
 
+.playbar {
+    background-color: orange;
+    width: 90%;
+    min-width: 100px;
+    height: 50%;
+    margin: 0 auto;
+
+}
+
+.settings {
+    background-color: aqua;
+    width: 150px;
+    height: 100%;
+}
 
 .center {
     width: calc(100% - 200px);
