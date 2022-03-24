@@ -486,9 +486,7 @@ h3 {
     }
 }
 
-
 /* Account - Sidebar */
-
 
 .profile {
     width: 20px;
@@ -511,7 +509,6 @@ h3 {
     color: white;
 }
 
-
 /* OVERFLOW Y SIDEBAR */
 
 .nav_top {
@@ -528,8 +525,6 @@ h3 {
     height: 100%;
     overflow-y: auto;
 }
-
-
 
 /* FOOTER */
 
@@ -584,6 +579,13 @@ footer {
     justify-content: space-around;
 }
 
+@media screen and (max-width: 600px) {
+    .track_icons {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .track_icons>a {
     padding: 0;
     font-size: 1.5rem;
@@ -593,22 +595,20 @@ footer {
 
 .play {
     width: calc(100% - 400px);
+    min-width: 200px;
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: deepskyblue;
 }
 
 .play_container {
     width: 55%;
     height: 100%;
-    background-color: lightseagreen;
 }
 
 .play_btns {
     width: 100%;
     height: 50%;
-    background-color: blueviolet;
 }
 
 .play_btns>ul {
@@ -637,20 +637,27 @@ footer {
     width: 100%;
     height: 50%;
     display: flex;
-
-    background-color: blue;
 }
 
 .time {
     width: 30px;
     height: 100%;
-    background-color: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bar {
     width: calc(100% - 60px);
     height: 100%;
-    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar>.all {
+    width: 90%;
 }
 
 /* Settings */
@@ -719,12 +726,7 @@ footer {
     bottom: 3.5px;
     left: 3.5px;
     display: none;
-    
-
 }
-
-
-
 
 .played {
     line-height: 70px;
@@ -751,158 +753,3 @@ footer {
 .played .btn:hover {
     text-decoration: underline;
 }
-
-/* Track Icons */
-
-/* .track>div {
-    width: 100%;
-    height: 100%;
-}
-
-.played_icons {
-    width: 30%;
-    height: 100%;
-    padding: 9px;
-    font-size: 1.3rem;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-@media screen and (max-width: 600px) {
-    .played_icons {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-    }
-}
-
-.played_icons>a {
-    margin: 0;
-    padding: 0;
-    font-size: inherit;
-} */
-
-
-/* Play */
-
-
-
-/* .buttons {
-    color: white;
-    width: 170px;
-    height: 50%;
-    padding-top: 9px;
-    line-height: 1.5rem;
-    font-size: 1.4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.buttons i:nth-child(3) {
-    font-size: 2.7rem;
-}
-
-.buttons i:nth-child(3):hover {
-    transform: scale(1.1);
-}
-
-.playbar {
-    color: white;
-    min-width: 170px;
-    width: 60%;
-    height: 50%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.playbar span:first-child {
-    margin-right: 2rem;
-}
-
-.playbar span:last-child {
-    margin-left: 2rem;
-}
-
-.playbar>div>i {
-    position: relative;
-    bottom: 7px;
-    left: 25%;
-    display: none;
-}
-
-.all:hover #play_circle {
-   display: inline-block;
-} */
-
-
-/* Settings */
-
-
-/* .settings_icons {
-    width: 40%;
-    height: 100%;
-    float: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.settings_icons>a {
-    font-size: 1.2rem;
-}
-
-.settings_icons .btn {
-    margin: 0;
-    padding: 0;
-}
-
-/* Audio bar */
-
-/* .audio_bar {
-    width: 60%;
-    height: 100%;
-    padding: 9px;
-    float: left;
-    display: flex;
-    align-items: center;
-}
-
-.all {
-    width: 100%;
-    height: 3px;
-    background-color: #5A5A5A;
-    border-radius: 2px;
-}
-
-.part {
-    width: 25%;
-    height: 3px;
-    background-color: white;
-    border-radius: 2px;
-    opacity: .5;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.all:hover .part {
-    background-color: #ADFF2F;
-    opacity: 1;
-}
-
-.all:hover .audio_circle {
-   display: inline-block;
-}
-
-.all .audio_circle {
-    font-size: 1.1rem;
-    color: white;
-    position: relative;
-    left: 16px;
-    bottom: 7px;
-    display: none;
-
-} */
