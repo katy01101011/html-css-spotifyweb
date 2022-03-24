@@ -128,6 +128,12 @@ main {
     background-color: #141922;
 }
 
+@media screen and (max-width: 600px) {
+    .center {
+        width: calc(100% - 50px);
+    }
+}
+
 .album_container {
     width: 100%;
     height: 100%;
@@ -184,12 +190,25 @@ h2 {
 
 .albums {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .album {
-    width: calc(100% / 6);
+    width: calc(100% / 6 - 13px);
     margin-top: 2rem;
     margin-right: 13px;  
+}
+
+@media screen and (max-width: 1100px) {
+    .album {
+        width: calc(100% / 4 - 13px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .album {
+        width: calc(100% / 2 - 13px);
+    }
 }
 
 .album_img {
@@ -259,6 +278,13 @@ h2 {
     padding-top: 2rem;
 }
 
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 50px;
+        padding-right: 10px;
+    }
+}
+
 .nav_container {
     width: 100%;
     height: 100%;
@@ -285,11 +311,33 @@ nav {
 
 /* Logo Spotify - Sidebar  */
 
-#logo_spotify>svg {
+#logo_spotify>svg:first-child {
     width: 100px;
     height: auto;
     margin-bottom: 1.7rem;
     padding-left: 15px;
+}
+
+#logo_spotify>svg:last-child {
+    width: 40px;
+    height: auto;
+    margin-bottom: 1.7rem;
+    padding-left: 15px;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #logo_spotify>svg:first-child {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 600px) {
+    #logo_spotify>svg:last-child {
+        display: inline-block;
+    }
 }
 
 /* List Menu - Sidebar */
@@ -308,6 +356,22 @@ nav {
 
 .menu .library {
     border-left: 2px solid transparent;
+}
+
+@media screen and (max-width: 600px) {
+    .search,
+    .library,
+    .menu span,
+    .playlist {
+        display: none;
+        border: none;
+    }
+
+    .menu .active,
+    .menu .search,
+    .menu .library {
+        border: none;
+    }
 }
 
 .icon {
@@ -391,6 +455,25 @@ h3 {
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 600px) {
+    .nav_bottom span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .install_container {
+        border-bottom: none;
+        margin-bottom: 10px;
+    }
+
+    nav>* {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
 
 /* Account - Sidebar */
 
@@ -440,17 +523,17 @@ h3 {
 
 footer {
     width: 100%;
+    min-width: 400px;
     height: 70px;
     background-color: #282828;
     display: flex;
-
 }
 
 /* Track */
 
 .track {
     width: 170px;
-    min-width: 170px;
+    min-width: 160px;
     height: 100%;
 }
 
@@ -502,6 +585,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .played_icons {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 }
 
 .played_icons>a {
